@@ -150,7 +150,7 @@ header nav ul li:hover::after {
 }
 
 .product-img img {
-    max-width: 880%;
+    max-width: 80%;
     max-height: 60%;
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
     transform: translateX(200px);
@@ -375,109 +375,61 @@ header nav ul li:hover::after {
     }
 }
 
-@media (min-width: 1200px) {
+
+@media screen and (max-width: 600px) and (min-width: 400px ){
+
     .container {
-        padding: 40px 80px;
+        padding-top: 120px; /* ou ajuste conforme necessário */
+    }
+    header{
+        display: flex;
+        flex-direction: column;
     }
 
-    .content {
-        width: 55%;
-        padding-right: 80px;
+    .log{
+        white-space: nowrap;
     }
 
-    .product-img {
-        width: 45%;
+    nav ul{
+        gap: 5px;
     }
 
-    .product-name {
-        font-size: 4.5rem;
-    }
-
-    .description {
-        font-size: 1.1rem;
-    }
-}
-
-/* ==================  TABLET  (768px – 1199px) ================== */
-@media (max-width: 1199px) and (min-width: 768px) {
-    header {
-        padding: 20px 40px;
-    }
-
-    .list {
-        width: 90%;
-    }
-
-    .content {
-        width: 50%;
-        padding-right: 40px;
-    }
-
-    .product-img {
-        width: 50%;
-    }
-
-    .product-name {
-        font-size: 3rem;
-    }
-
-    .description {
+    .product-tag{
         font-size: 1rem;
     }
 
-    .btn {
-        font-size: 0.9rem;
-        padding: 10px 18px;
-    }
-}
-
-/* ==================  MOBILE  (≤767px) ================== */
-@media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px 20px;
+    .product-name{
+        font-size: 1.5rem;
     }
 
-    header nav ul {
-        gap: 20px;
-    }
-
-    .item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .product-img {
-        width: 100%;
-        justify-content: center;
+    .description{
+        font-size: .7rem;
+        max-width: 100px;
+        max-height: 50px;
+        line-height: 1.1; 
         margin-bottom: 20px;
     }
 
-    .content {
-        width: 100%;
-        padding: 0 20px;
-        align-items: center;
+    .media{
+        font-size: .6rem;
+        max-width: 100px;
+        max-height: 100px;
     }
 
-    .product-name {
-        font-size: 2rem;
+    .btn{
+        margin-top: 50px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (min-width: 654px) and (max-width: 1140px){
+    header{
+        gap: 2px;
+        padding: 10px 10px;
     }
 
-    .description {
-        font-size: 0.9rem;
-    }
-
-    .btn {
-        font-size: 0.85rem;
-        padding: 8px 16px;
-    }
-
-    .arrows {
-        width: 100%;
-    }
-
-    .indicators {
-        bottom: 20px;
+    header nav ul{
+        gap: 20px;
+        padding: 0 2px 0 0;
     }
 }
